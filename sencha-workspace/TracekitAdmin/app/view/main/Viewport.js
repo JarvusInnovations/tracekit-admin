@@ -4,10 +4,8 @@
  * plugin causing this view to become the body element (i.e., the viewport).
  */
 Ext.define('TracekitAdmin.view.main.Viewport', {
-    extend: 'Ext.Panel',
+    extend: 'Ext.Container',
     xtype: 'main-viewport',
-
-    title: 'Viewport',
 
     layout: 'fit',
 
