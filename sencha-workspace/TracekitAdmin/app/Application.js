@@ -12,6 +12,13 @@ Ext.define('TracekitAdmin.Application', {
         'TracekitAdmin.API'
     ],
 
+    stores: [
+    ],
+
+    controllers: [
+        'Reports'
+    ],
+
     launch: function () {
         // TODO - Launch the application
     },
