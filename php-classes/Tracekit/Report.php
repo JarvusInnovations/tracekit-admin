@@ -39,4 +39,17 @@ class Report extends \ActiveRecord {
             'notnull' => false
         ]
 	];
+
+    public static $relationships = [
+        'Stacks' => [
+            'type' => 'one-many',
+            'local' => 'ID',
+            'foreign' => 'ReportID',
+            'class' => Stack::class
+        ],
+    ];
+
+    public static $dynamicFields = [
+        'Stacks'
+    ];
 }
