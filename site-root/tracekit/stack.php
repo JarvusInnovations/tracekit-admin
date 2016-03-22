@@ -1,0 +1,3 @@
+<?php
+
+Tracekit\StackRequestHandler::handleRequest();
