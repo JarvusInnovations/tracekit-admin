@@ -48,7 +48,7 @@ Ext.define('TracekitAdmin.controller.Reports', {
     onReportGridSelected: function(grid,rec) {
         this.getStacksStore().load({
             params: {
-                error_report_id: rec.getId()
+                ReportID: rec.getId()
             }
         });
     },
