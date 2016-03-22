@@ -61,7 +61,7 @@ Ext.define('TracekitAdmin.model.Stack', {
 
     proxy: {
         type: 'tracekitadmin',
-        url: '/api/stacks'
+        url: '/tracekit/stack'
     }
 
 });
