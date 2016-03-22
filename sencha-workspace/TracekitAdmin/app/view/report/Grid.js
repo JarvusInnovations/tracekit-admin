@@ -21,24 +21,31 @@ Ext.define('TracekitAdmin.view.report.Grid', {
     columns : [{
         header: 'Created',
         dataIndex: 'Created',
-        width: 124,
         xtype: 'datecolumn',
-        format: 'Y-m-d h:i:s A'
+        format: 'Y-m-d h:i:s A',
+        flex: 2
     },{
         header: 'App',
-        dataIndex: 'app_name',
-        width: 144
+        dataIndex: 'ApplicationName',
+        flex: 2
     },{
         header: 'Error',
-        dataIndex: 'error_name',
-        flex: 1
+        dataIndex: 'ErrorName',
+        flex: 2
     },{
         header: 'Mode',
-        dataIndex: 'error_mode',
-        width: 64
+        dataIndex: 'ErrorMode',
+        flex: 1
     },{
         header: 'Message',
-        dataIndex: 'message',
+        dataIndex: 'ErrorMessage',
+        flex: 3,
+        renderer: function(val) {
+            return '<span data-qtip="'+val+'">'+val+'</span>';
+        }
+    },{
+        header: 'User Agent',
+        dataIndex: 'UserAgent',
         flex: 3,
         renderer: function(val) {
             return '<span data-qtip="'+val+'">'+val+'</span>';
