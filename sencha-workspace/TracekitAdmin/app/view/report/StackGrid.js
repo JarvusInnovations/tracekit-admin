@@ -14,21 +14,21 @@ Ext.define('TracekitAdmin.view.report.StackGrid', {
         },
         items: [{
             header: '#',
-            dataIndex: 'stack_item',
+            dataIndex: 'StackItem',
             width: 24,
             align: 'right'
         },{
             header: 'Url',
-            dataIndex: 'url',
+            dataIndex: 'Url',
             flex: 6
         },{
             header: 'line',
-            dataIndex: 'line',
+            dataIndex: 'Line',
             width: 64,
             align: 'right'
         },{
             header: 'func',
-            dataIndex: 'func',
+            dataIndex: 'Func',
             flex: 3
         }]
     }

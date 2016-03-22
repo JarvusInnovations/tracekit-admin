@@ -54,7 +54,7 @@ Ext.define('TracekitAdmin.controller.Reports', {
     },
 
     onReportStackGridSelected: function(grid,rec) {
-        this.getStackView().update({stack: rec.get('context')});
+        this.getStackView().update({stack: rec.get('Context')});
     }
 
 });
