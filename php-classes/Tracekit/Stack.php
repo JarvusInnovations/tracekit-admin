@@ -45,5 +45,13 @@ class Stack extends \ActiveRecord {
             'notnull' => false
         ]       
 	];
+    
+    public static $searchConditions = [
+        'ReportID' => array(
+            'qualifiers' => array('reportid')
+            ,'points' => 2
+            ,'sql' => 'ID=%u'
+        )
+    ];     
 
 }
