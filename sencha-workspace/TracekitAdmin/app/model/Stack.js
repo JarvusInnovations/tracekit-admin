@@ -30,38 +30,38 @@ Ext.define('TracekitAdmin.model.Stack', {
             useNull: true
         },
         {
-            name: "error_report_id",
+            name: "ReportID",
             type: "int"
         },
         {
-            name: "stack_item",
+            name: "StackItem",
             type: "int"
         },
         {
-            name: "url",
+            name: "Url",
             type: "string"
         },
         {
-            name: "line",
+            name: "Line",
             type: "string"
         },
         {
-            name: "column_no",
+            name: "ColumnNo",
             type: "string"
         },
         {
-            name: "func",
+            name: "Func",
             type: "string"
         },
         {
-            name: "context",
+            name: "Context",
             type: "string"
         }
     ],
 
     proxy: {
         type: 'tracekitadmin',
-        url: '/api/stacks'
+        url: '/tracekit/stack'
     }
 
 });

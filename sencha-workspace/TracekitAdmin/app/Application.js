@@ -19,6 +19,17 @@ Ext.define('TracekitAdmin.Application', {
         'Reports'
     ],
 
+    /*
+    *  check the url for an apiHost parameter and set the API hostname if it exists.
+    */
+    init: function() {
+        var pageParams = Ext.Object.fromQueryString(location.search);
+
+        if (pageParams.apiHost) {
+            TracekitAdmin.API.setHost(pageParams.apiHost);
+        }
+    },
+
     launch: function () {
         // TODO - Launch the application
     },

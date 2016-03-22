@@ -9,51 +9,51 @@ Ext.define('TracekitAdmin.model.Report', {
 
     fields: [
         {
-            name: "ID",
-            type: "int",
+            name: 'ID',
+            type: 'int',
             useNull: true
         },
         {
-            name: "Class",
-            type: "string",
-            defaultValue: "Report"
+            name: 'Class',
+            type: 'string',
+            defaultValue: 'Report'
         },
         {
-            name: "Created",
-            type: "date",
-            dateFormat: "timestamp",
+            name: 'Created',
+            type: 'date',
+            dateFormat: 'timestamp',
             useNull: true
         },
         {
-            name: "CreatorID",
-            type: "int",
+            name: 'CreatorID',
+            type: 'int',
             useNull: true
         },
         {
-            name: "error_mode",
-            type: "string"
+            name: 'ApplicationName',
+            type: 'string'
         },
         {
-            name: "error_name",
-            type: "string"
+            name: 'ErrorMode',
+            type: 'string'
         },
         {
-            name: "message",
-            type: "string"
+            name: 'ErrorMode',
+            type: 'string'
         },
         {
-            name: "url",
-            type: "string"
+            name: 'ErrorUrl',
+            type: 'string'
         },
         {
-            name: "useragent",
-            type: "string"
+            name: 'UserAgent',
+            type: 'string'
         }
     ],
 
     proxy: {
         type: 'tracekitadmin',
-        url: '/api/reports'
+        url: '/tracekit/report'
     }
 
 });
